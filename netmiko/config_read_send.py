@@ -13,6 +13,7 @@ PASSWORD = os.environ.get('SSH_PASSWORD')
 device_list = []
 device_parameters = {
     "device_type": "cisco_ios",
+#   "device_type": "arista_eos",    #Use this if you are connecting to Arista_EOS.
 #    "host": "10.155.76.10",  # Replace with your device's IP address if you want to run for device locally rather than from a file.
     "username": USERNAME,  # Replace with your SSH username
     "password": PASSWORD,  # Replace with your SSH password
