@@ -56,7 +56,7 @@ def device_info(device):
                         'snmp-server view NO_BAD_SNMP cafSessionMethodsInfoEntry.2.1.111 excluded',
                         'snmp-server community tenney-dog view NO_BAD_SNMP RO']
             result = net_connect.send_config_set(commands)
-            print(f"Config result for {device['host']}:\n{result}"
+            print(f"Config result for {device['host']}:\n{result}")
             output = net_connect.send_command("show run | include snmp")
             return f"Host: {device['host']}\n{output}"
     except NetmikoTimeoutException:
